@@ -1,0 +1,7 @@
+{
+  "backstage-community-plugin-jenkins": {
+    "workspacePath": "jenkins/plugins/jenkins",
+    "support": "community",
+    "registryReference": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-jenkins:bs_1.54.6__0.34.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "backstage-plugin-catalog-backend-module-msgraph": {
+    "workspacePath": "backstage/plugins/catalog-backend-module-msgraph",
+    "support": "generally-available",
+    "registryReference": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-catalog-backend-module-msgraph:bs_1.54.6__0.10.5"
+  }
+}
