@@ -18,7 +18,7 @@ metadata:
 spec:
   packageName: "@backstage-community/plugin-scaffolder-backend-module-servicenow"
   # Tag: bs_1.54.6__2.17.0
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-scaffolder-backend-module-servicenow@sha256:935db0815c3835caebac37ce393f2356f4afdf67efad003d96ec2a78354502a7"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-scaffolder-backend-module-servicenow@sha256:b3e66e3d8a60a58f9d272c1d726085274cca67257d960490477b26d3b80b5f10"
   version: 2.17.0
   backstage:
     role: backend-plugin-module

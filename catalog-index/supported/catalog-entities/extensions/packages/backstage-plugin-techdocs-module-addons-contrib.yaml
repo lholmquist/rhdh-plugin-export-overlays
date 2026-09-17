@@ -17,7 +17,7 @@ metadata:
 spec:
   packageName: "@backstage/plugin-techdocs-module-addons-contrib"
   # Tag: bs_1.54.6__1.1.39
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-techdocs-module-addons-contrib@sha256:119717e549691acfe08764826b8079e64b76206b22cfb8e0ada97b0fe62b7629"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-techdocs-module-addons-contrib@sha256:a66bd37bf34558e295cbd5677452a8620e53554a2c24254bfaac3cfe35fa07d5"
   version: 1.1.39
   backstage:
     role: frontend-plugin-module
@@ -30,38 +30,41 @@ spec:
   appConfigExamples:
     - title: Default configuration
       content:
-        dynamicPlugins:
-          frontend:
-            backstage.plugin-techdocs-module-addons-contrib:
-              techdocsAddons:
-                - importName: ReportIssue
+        app:
+          extensions:
+            - addon:techdocs/expandable-navigation: false
+            - addon:techdocs/report-issue
+            - addon:techdocs/text-size: false
+            - addon:techdocs/light-box: false
     - title: ReportIssue configuration
       content:
-        dynamicPlugins:
-          frontend:
-            backstage.plugin-techdocs-module-addons-contrib:
-              techdocsAddons:
-                - importName: ReportIssue
+        app:
+          extensions:
+            - addon:techdocs/expandable-navigation: false
+            - addon:techdocs/report-issue
+            - addon:techdocs/text-size: false
+            - addon:techdocs/light-box: false
     - title: TextSize configuration
       content:
-        dynamicPlugins:
-          frontend:
-            backstage.plugin-techdocs-module-addons-contrib:
-              techdocsAddons:
-                - importName: TextSize
+        app:
+          extensions:
+            - addon:techdocs/expandable-navigation: false
+            - addon:techdocs/report-issue: false
+            - addon:techdocs/text-size
+            - addon:techdocs/light-box: false
     - title: LightBox configuration
       content:
-        dynamicPlugins:
-          frontend:
-            backstage.plugin-techdocs-module-addons-contrib:
-              techdocsAddons:
-                - importName: LightBox
+        app:
+          extensions:
+            - addon:techdocs/expandable-navigation: false
+            - addon:techdocs/report-issue: false
+            - addon:techdocs/text-size: false
+            - addon:techdocs/light-box
     - title: All add-ons enabled configuration
       content:
-        dynamicPlugins:
-          frontend:
-            backstage.plugin-techdocs-module-addons-contrib:
-              techdocsAddons:
-                - importName: ReportIssue
-                - importName: TextSize
-                - importName: LightBox
+        app:
+          extensions:
+            - addon:techdocs/expandable-navigation
+            - addon:techdocs/report-issue
+            - addon:techdocs/text-size
+            - addon:techdocs/light-box

@@ -17,7 +17,7 @@ metadata:
 spec:
   packageName: "@backstage-community/plugin-jfrog-artifactory"
   # Tag: bs_1.54.6__2.0.1
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-jfrog-artifactory@sha256:ffe7c1ae7e0600eb16201df67709d1c9c9dea43a753616d8340d3d6006f6ff32"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-jfrog-artifactory@sha256:e00f6ec30ec52e32b6b48aade520ca6083624cec34f8c87cc0629139d10904e7"
   version: 2.0.1
   backstage:
     role: frontend-plugin
