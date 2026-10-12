@@ -64,6 +64,10 @@ export default playwrightDefineConfig({
       testMatch: /tests\/specs\/gitlab-scaffolder-actions\.spec\.ts/,
     },
     {
+      name: "backstage-github-scaffolder-actions",
+      testMatch: /tests\/specs\/github-scaffolder-actions\.spec\.ts/,
+    },
+    {
       name: "backstage-auth",
       testMatch: /tests\/specs\/auth\.spec\.ts/,
     },
@@ -74,6 +78,10 @@ export default playwrightDefineConfig({
     {
       name: "backstage-gitlab-auth",
       testMatch: /tests\/specs\/gitlab-auth\.spec\.ts/,
+    },
+    {
+      name: "backstage-ldap-auth",
+      testMatch: /tests\/specs\/ldap-auth\.spec\.ts/,
     },
   ],
 });
