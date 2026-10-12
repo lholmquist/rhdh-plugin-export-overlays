@@ -16,9 +16,9 @@ metadata:
   tags: []
 spec:
   packageName: '@backstage-community/plugin-tekton'
-  # Tag: bs_1.54.6__4.0.2
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-tekton@sha256:12dfa33408dea51f3946bfd541fb59b9f98fa2a77f915f1f9bf92b49d990494e"
-  version: 4.0.2
+  # Tag: bs_1.54.9__4.0.5
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-tekton@sha256:ed4199763d08eb79a2dd7aba179d6b3effa2ff0a09d5f3495f520bfbe8e5cb90"
+  version: 4.0.5
   backstage:
     role: frontend-plugin
     supportedVersions: 1.54.6
@@ -30,18 +30,12 @@ spec:
   appConfigExamples:
     - title: Default configuration
       content:
+        # NFS auto-discovers createFrontendPlugin from the package default export
+        # (title "Tekton", group deployment). Do not wire legacy entity.page.ci
+        # / TektonCI mountPoints — they do not render tabs on RHDH 2.1 NFS.
         dynamicPlugins:
           frontend:
             backstage-community.plugin-tekton:
               translationResources:
                 - importName: tektonTranslations
                   ref: tektonTranslationRef
-              mountPoints:
-                - mountPoint: entity.page.ci/cards
-                  importName: TektonCI
-                  config:
-                    layout:
-                      gridColumn: 1 / -1
-                    if:
-                      allOf:
-                        - isTektonCIAvailable

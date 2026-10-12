@@ -18,8 +18,8 @@ metadata:
     - automation
 spec:
   packageName: "@red-hat-developer-hub/backstage-plugin-scaffolder-backend-module-orchestrator"
-  # Tag: bs_1.54.6__1.8.1
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scaffolder-backend-module-orchestrator@sha256:f20d050bc0fd539a43dd9477d56ca3c13e83b9f3de1a4a1af6cb301847f50967"
+  # Tag: bs_1.54.9__1.8.1
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scaffolder-backend-module-orchestrator@sha256:d48ac8c203749e0e8a7d1ba5cd55ca3471c2f706c6efd1a69f60e6f0cc28d955"
   version: 1.8.1
   backstage:
     role: backend-plugin-module

@@ -16,12 +16,12 @@ metadata:
   tags: []
 spec:
   packageName: "@red-hat-developer-hub/backstage-plugin-analytics-module-adoption-insights"
-  # Tag: bs_1.52.0__0.9.1
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-analytics-module-adoption-insights@sha256:8938bf6c8339d430399ef90731a1f9f22bf35b42108ce24afd215b35f8d06385"
-  version: 0.9.1
+  # Tag: bs_1.54.9__1.0.4
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-analytics-module-adoption-insights@sha256:294c0686b3c1f5522f2d3135e73b891537d638879de387dbe2c19b8957483bf6"
+  version: 1.0.4
   backstage:
     role: frontend-plugin-module
-    supportedVersions: 1.52.0
+    supportedVersions: 1.54.6
   author: Red Hat
   support: generally-available
   lifecycle: active

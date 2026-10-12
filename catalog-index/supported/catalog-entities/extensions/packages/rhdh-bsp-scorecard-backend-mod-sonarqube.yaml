@@ -1,7 +1,7 @@
 apiVersion: extensions.backstage.io/v1alpha1
 kind: Package
 metadata:
-  name: rhdh-backstage-plugin-scorecard-backend-module-sonarqube
+  name: rhdh-bsp-scorecard-backend-mod-sonarqube
   namespace: rhdh
   title: "Scorecard Backend Module for SonarQube"
   links:
@@ -17,12 +17,12 @@ metadata:
     - analytics
 spec:
   packageName: "@red-hat-developer-hub/backstage-plugin-scorecard-backend-module-sonarqube"
-  # Tag: bs_1.54.6__4.4.1
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend-module-sonarqube@sha256:3e87973098b93a3f27de5915eb07f9cd12485e3defc78c550108d6ad75d88265"
-  version: 4.4.1
+  # Tag: bs_1.54.9__4.4.2
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend-module-sonarqube@sha256:d85e30031d5d39f440c55dd8c5e8ed2ba80d993a4d71cafdb1d4410cc5b14d87"
+  version: 4.4.2
   backstage:
     role: backend-plugin-module
-    supportedVersions: 1.54.6
+    supportedVersions: 1.54.9
   author: Red Hat
   support: tech-preview
   lifecycle: active

@@ -1,7 +1,7 @@
 apiVersion: extensions.backstage.io/v1alpha1
 kind: Package
 metadata:
-  name: rhdh-backstage-plugin-scorecard-backend-module-catalog
+  name: rhdh-bsp-scorecard-backend-mod-ctlg
   namespace: rhdh
   title: "Scorecard Backend Module for Catalog"
   links:
@@ -17,11 +17,12 @@ metadata:
     - analytics
 spec:
   packageName: "@red-hat-developer-hub/backstage-plugin-scorecard-backend-module-catalog"
-  dynamicArtifact: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend-module-catalog:bs_1.54.6__0.1.3
-  version: 0.1.3
+  # Tag: bs_1.54.9__0.1.4
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend-module-catalog@sha256:2eaa7a6318522373a11854daf281c33e3ce622112f24da39c89b7e4c11e5332c"
+  version: 0.1.4
   backstage:
     role: backend-plugin-module
-    supportedVersions: 1.54.6
+    supportedVersions: 1.54.9
   author: Red Hat
   support: dev-preview
   lifecycle: active
